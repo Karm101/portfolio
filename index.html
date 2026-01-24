@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">Mark Joseph P. Pepito</h1>
-         <img src="profileWhite.jpg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">BS Information System - 4th Year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>Information Technology Specialist in Java</li>
-            <li>-</li>
-            <li>-</li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>Kagawa's Grocery Project Management</li>
-            <li>3rdOnSell</li>
-            <li>SpeedPuzzle</li>
-         </ul>
-      </section>
-      <script src="script.js"></script>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Joseph P. Pepito | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-section">
+                <img src="profileWhite.jpg" alt="Mark Joseph Pepito" id="profile-img">
+                <div class="intro">
+                    <h1 id="name">Mark Joseph P. Pepito</h1>
+                    <p id="course-year">BS Information System - 4th Year</p>
+                    <span class="status">College Student</span>
+                </div>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                🌙 Dark Mode
+            </button>
+        </header>
+
+        <main>
+            <section id="featured">
+                <h2>Latest Work</h2>
+                <div class="project-card featured-card">
+                    <div class="card-content">
+                        <h3>WuWa Data Bank</h3>
+                        <p>A Next.js application using a unofficial REST API to track Wuthering Waves characters and weapons. Features smart search, filtering, and dynamic routing. REST api was made by ProjektCode</p>
+                        <div class="tags">
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>Tailwind</span>
+                            <span>API</span>
+                        </div>
+                        <a href="https://wuwa-db.vercel.app/" target="_blank" class="btn-primary">View Live App</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Previous Projects</h2>
+                <div class="grid">
+                    <div class="project-card">
+                        <h3>Kagawa's Grocery</h3>
+                        <p>Project Management System</p>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="project-card">
+                        <h3>3rdOnSell</h3>
+                        <p>E-commerce Platform</p>
+                        <span class="year">2023</span>
+                    </div>
+                    <div class="project-card">
+                        <h3>SpeedPuzzle</h3>
+                        <p>Interactive Game</p>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="achievements">
+                <h2>Certifications</h2>
+                <ul class="cert-list">
+                    <li>
+                        <span class="checkmark">✓</span> 
+                        Information Technology Specialist in Java
+                    </li>
+                    </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Mark Joseph P. Pepito. Built with Vanilla HTML/CSS.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
